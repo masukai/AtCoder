@@ -1,14 +1,7 @@
-from typing import AnyStr
+W, H, x, y = map(int, input().split())
 
+frag = 0
+if (W / 2 == x and H / 2 == y):
+    frag = 1
 
-W, N, x, y = map(int, input().split())
-
-
-def cal(L, S):
-    return ans
-
-
-if (W >= N):
-    cal(W, N)
-else:
-    cal(N, W)
+print((W * H) / 2, frag)
