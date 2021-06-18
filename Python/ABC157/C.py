@@ -17,7 +17,10 @@ for i in range(M):
 
 for i in range(N):
     if (num[i] == "A"):
-        num[i] = 0
+        if ((i == 0) and (N > 1)):
+            num[i] = 1
+        else:
+            num[i] = 0
 
 if (ans != -1):
     check = int(''.join(map(str, num)))
